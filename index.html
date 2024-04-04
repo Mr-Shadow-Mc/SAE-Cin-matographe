@@ -28,7 +28,7 @@
 
         .logo {
             width: 196px;
-            height: 104px;
+            height: 124px;
             flex-shrink: 0;
             margin: 0 auto;
             margin-top: 15px;
@@ -49,10 +49,26 @@
             text-transform: capitalize;
             word-wrap: break-word;
             margin-top: 27px;
+            padding-left: 10px;
         }
 
-        .bgcolor
-        {
+        .header {
+            display: flex;
+            width: inherit;
+            height: 4.6875rem;
+            padding: 1rem;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            row-gap: 4.9375rem;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            border-radius: 0rem 0rem 0.9375rem 0.9375rem;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .bgcolor {
             background-color: #FFC639;
         }
     </style>
@@ -63,35 +79,27 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div style="display: flex;
-        width: inherit;
-        height: 4.6875rem;
-        padding: 1rem;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        row-gap: 4.9375rem;
-        flex-shrink: 0;
-        flex-wrap: wrap;
-        border-radius: 0rem 0rem 0.9375rem 0.9375rem;
-        background: #000;
-        overflow: hidden;">
-
+    <div class="header">
         <div style="color: white; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
             Passé composé</div>
     </div>
 
-    <div style="width: 100%; height: max-content; text-align: center;"><img src="https://via.placeholder.com/196x104"
+    <div style="width: 100%; height: max-content; text-align: center;"><img src="./assets/images/photos/Passé-Composé-Logo-final.png"
             class="logo" /></div>
 
     <div class="section_title">
         La plus récente </div>
 
     <div style="margin: 15px auto; display: block; height: max-content; width: max-content;">
-        <div style="width: 307px;
-        height: 141px; position: relative; margin: 0 auto;">
+        <div style="
+        width: 307px;
+        height: 141px;
+        position: relative;
+        margin: 0 auto;
+        padding: 7px;
+        ">
             <div
-                style="width: 307px; height: 141px; left: 0px; top: 0px; position: absolute; background: #FFC639; border-radius: 15px">
+                style="width: 100%;height: 100%;left: 0px;top: 0px;position: absolute;background: #FFC639;border-radius: 15px">
             </div>
             <div
                 style="width: 134.44px; height: 29.68px; left: 11.64px; top: 4.95px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
@@ -111,41 +119,63 @@
 
     <div class="section_title">Trier par sélection</div>
 
-    <div style="display: flex; height: 45px; margin-top: 10px; justify-content: center;">
-        <div style="width: 309px; height: 100%; position: relative">
-            <div style="width: 140px; height: 37px; left: 0px; top: 0px; position: absolute">
-                <div style="width: 140px; height: 35px; left: 0px; top: 2px; position: absolute; background: linear-gradient(0deg, #D0A435 0%, #D0A435 100%), linear-gradient(0deg, #D0A435 0%, #D0A435 100%); border-radius: 22px"></div>
-                <div style="width: 140px; height: 35px; left: 0px; top: 0px; position: absolute; background: #FFC639; border-radius: 22px"></div>
-                <div style="width: 93px; height: 20px; left: 24px; top: 7px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.56); font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word">01/01/1920</div>
+    <form action="" method="post">
+        <div style="display: flex; height: 45px; margin-top: 10px; justify-content: center;">
+            <div style="width: 309px; height: 100%; position: relative">
+                <div style="width: 140px; height: 37px; left: 0px; top: 0px; position: absolute">
+                    <div
+                        style="width: 140px; height: 35px; left: 0px; top: 2px; position: absolute; background: linear-gradient(0deg, #D0A435 0%, #D0A435 100%), linear-gradient(0deg, #D0A435 0%, #D0A435 100%); border-radius: 22px">
+                    </div>
+                    <div
+                        style="width: 140px; height: 35px; left: 0px; top: 0px; position: absolute; background: #FFC639; border-radius: 22px">
+                    </div>
+                    <input type="number" class="bgcolor"
+                        style="border: none;width: 93px; height: 20px; left: 24px; top: 7px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.56); font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word"
+                        min="1900" max="2099" step="1" value="2016"/>
+                </div>
+                <div style="width: 140px; height: 37px; left: 169px; top: 0px; position: absolute">
+                    <div
+                        style="width: 140px; height: 35px; left: 0px; top: 2px; position: absolute; background: linear-gradient(0deg, #D0A435 0%, #D0A435 100%), linear-gradient(0deg, #D0A435 0%, #D0A435 100%); border-radius: 22px">
+                    </div>
+                    <div
+                        style="width: 140px; height: 35px; left: 0px; top: 0px; position: absolute; background: #FFC639; border-radius: 22px">
+                    </div>
+                    <input type="number" class="bgcolor"
+                        style="border: none;width: 93px; height: 20px; left: 24px; top: 7px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.56); font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word"
+                        min="1900" max="2099" step="1" value="2016"/>
+                </div>
+                <div
+                    style="left: 150px; top: 9px; position: absolute; text-align: center; color: black; font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word">
+                    à</div>
             </div>
-            <div style="width: 140px; height: 37px; left: 169px; top: 0px; position: absolute">
-                <div style="width: 140px; height: 35px; left: 0px; top: 2px; position: absolute; background: linear-gradient(0deg, #D0A435 0%, #D0A435 100%), linear-gradient(0deg, #D0A435 0%, #D0A435 100%); border-radius: 22px"></div>
-                <div style="width: 140px; height: 35px; left: 0px; top: 0px; position: absolute; background: #FFC639; border-radius: 22px"></div>
-                <div style="width: 93px; height: 20px; left: 24px; top: 7px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.56); font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word">01/01/1920</div>
-            </div>
-            <div style="left: 150px; top: 9px; position: absolute; text-align: center; color: black; font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word">à</div>
         </div>
-    </div>
 
-    <div style="width: 132px; height: 36px; position: relative; margin: 0 auto;">
-        <div
-            style="width: 132px; height: 33.60px; left: -0px; top: 2.52px; position: absolute; background: #C5941B; border-radius: 22px">
+        
+
+        <div style="width: 132px; height: 36px; position: relative; margin: 0 auto;">
+            <div
+                style="width: 132px; height: 33.60px; left: -0px; top: 2.52px; position: absolute; background: #C5941B; border-radius: 22px">
+            </div>
+            <div
+                style="width: 132px; height: 33.60px; left: -0px; top: 0.55px; position: absolute; background: #F9BE2E; border-radius: 22px">
+            </div>
+            <input type="submit" value="rechercher"
+                style="width: 132px; height: 34.15px; left: 0px;;position: absolute; text-align: center; color: #705719; font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word; border: none; background: none;">
         </div>
-        <div
-            style="width: 132px; height: 33.60px; left: -0px; top: 0.55px; position: absolute; background: #F9BE2E; border-radius: 22px">
-        </div>
-        <div
-            style="width: 132px; height: 34.15px; left: 0px; top: 9px ;position: absolute; text-align: center; color: #705719; font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word">
-            rechercher</div>
-    </div>
+    </form>
 
     <div class="section_title">Résultat(s) (3)</div>
 
     <div style="margin: 15px auto; display: block; height: max-content; width: max-content;">
-        <div style="width: 307px;
-    height: 141px; position: relative; margin: 0 auto;">
+        <div style="
+        width: 307px;
+        height: 141px;
+        position: relative;
+        margin: 0 auto;
+        padding: 7px;
+        ">
             <div
-                style="width: 307px; height: 141px; left: 0px; top: 0px; position: absolute; background: #FFC639; border-radius: 15px">
+                style="width: 100%;height: 100%;left: 0px;top: 0px;position: absolute;background: #FFC639;border-radius: 15px">
             </div>
             <div
                 style="width: 134.44px; height: 29.68px; left: 11.64px; top: 4.95px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
@@ -164,10 +194,15 @@
     </div>
 
     <div style="margin: 15px auto; display: block; height: max-content; width: max-content;">
-        <div style="width: 307px;
-    height: 141px; position: relative; margin: 0 auto;">
+        <div style="
+        width: 307px;
+        height: 141px;
+        position: relative;
+        margin: 0 auto;
+        padding: 7px;
+        ">
             <div
-                style="width: 307px; height: 141px; left: 0px; top: 0px; position: absolute; background: #FFC639; border-radius: 15px">
+                style="width: 100%;height: 100%;left: 0px;top: 0px;position: absolute;background: #FFC639;border-radius: 15px">
             </div>
             <div
                 style="width: 134.44px; height: 29.68px; left: 11.64px; top: 4.95px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
@@ -186,10 +221,15 @@
     </div>
 
     <div style="margin: 15px auto; display: block; height: max-content; width: max-content;">
-        <div style="width: 307px;
-    height: 141px; position: relative; margin: 0 auto;">
+        <div style="
+        width: 307px;
+        height: 141px;
+        position: relative;
+        margin: 0 auto;
+        padding: 7px;
+        ">
             <div
-                style="width: 307px; height: 141px; left: 0px; top: 0px; position: absolute; background: #FFC639; border-radius: 15px">
+                style="width: 100%;height: 100%;left: 0px;top: 0px;position: absolute;background: #FFC639;border-radius: 15px">
             </div>
             <div
                 style="width: 134.44px; height: 29.68px; left: 11.64px; top: 4.95px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
