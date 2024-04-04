@@ -68,6 +68,68 @@
             overflow: hidden;
         }
 
+
+        #hist-wrapper
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .hist-wrapper {
+            margin: 15px auto;
+            display: block;
+            height: max-content;
+            width: max-content;
+        }
+
+        .hist-content {
+            width: 307px;
+            height: max-content;
+            position: relative;
+            margin: 0 auto;
+            padding: 10px;
+            background: #FFC639;
+            border-radius: 15px;
+        }
+
+        .hist-content>div:first-child {
+            color: black;
+            font-size: 20px;
+            font-family: Inter;
+            font-weight: 700;
+            text-transform: capitalize;
+            word-wrap: break-word;
+            margin-bottom: 5px;
+        }
+
+        .hist-content>div:nth-child(3) {
+            color: #3F2E20;
+            font-size: 14px;
+            font-family: Inter;
+            font-weight: 700;
+            text-transform: capitalize;
+            word-wrap: break-word;
+            margin: 5px 0;
+        }
+
+        .hist-line-effet {
+            width: 121px;
+            height: 5px;
+            background: linear-gradient(90deg, #D0A435 0%, #D0A435 49%, rgba(184.39, 138.54, 90.71, 0) 100%);
+            border-radius: 15px;
+        }
+
+        .hist-desc {
+            width: 284px;
+            color: #484848;
+            font-size: 10px;
+            font-family: Inter;
+            font-weight: 700;
+            text-transform: capitalize;
+            word-wrap: break-word;
+        }
+
         .bgcolor {
             background-color: #FFC639;
         }
@@ -84,41 +146,21 @@
             Passé composé</div>
     </div>
 
-    <div style="width: 100%; height: max-content; text-align: center;"><img src="./assets/images/photos/Passé-Composé-Logo-final.png"
-            class="logo" /></div>
+    <div style="width: 100%; height: max-content; text-align: center;"><img src="./assets/images/photos/Passé-Composé-Logo-final.png" class="logo" /></div>
 
     <div class="section_title">
         La plus récente </div>
-
-    <div style="margin: 15px auto; display: block; height: max-content; width: max-content;">
-        <div style="
-        width: 307px;
-        height: 141px;
-        position: relative;
-        margin: 0 auto;
-        padding: 7px;
-        ">
-            <div
-                style="width: 100%;height: 100%;left: 0px;top: 0px;position: absolute;background: #FFC639;border-radius: 15px">
-            </div>
-            <div
-                style="width: 134.44px; height: 29.68px; left: 11.64px; top: 4.95px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Nom histoire</div>
-            <div
-                style="width: 50.81px; height: 21.03px; left: 11.64px; top: 40.82px; position: absolute; color: #3F2E20; font-size: 14px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Auteur</div>
-            <div
-                style="width: 284px; height: 58px; left: 12px; top: 67px; position: absolute; color: #484848; font-size: 10px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio
+    <div class="hist-wrapper">
+        <div class="hist-content">
+            <div>Nom histoire</div>
+            <div class="hist-line-effet"> </div>
+            <div>Auteur</div>
+            <div class="hist-desc">Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio
                 sollemnium sportularum, anxia deliberatione tractatur an exceptis his... </div>
-            <div
-                style="width: 121px; height: 5px; left: 12px; top: 35px; position: absolute; background: linear-gradient(90deg, #D0A435 0%, #D0A435 49%, rgba(184.39, 138.54, 90.71, 0) 100%); border-radius: 15px">
-            </div>
         </div>
     </div>
 
     <div class="section_title">Trier par sélection</div>
-
     <form action="" method="post">
         <div style="display: flex; height: 45px; margin-top: 10px; justify-content: center;">
             <div style="width: 309px; height: 100%; position: relative">
@@ -131,7 +173,7 @@
                     </div>
                     <input type="number" class="bgcolor"
                         style="border: none;width: 93px; height: 20px; left: 24px; top: 7px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.56); font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word"
-                        min="1900" max="2099" step="1" value="2016"/>
+                        min="1900" max="2099" step="1" value="2016" />
                 </div>
                 <div style="width: 140px; height: 37px; left: 169px; top: 0px; position: absolute">
                     <div
@@ -142,7 +184,7 @@
                     </div>
                     <input type="number" class="bgcolor"
                         style="border: none;width: 93px; height: 20px; left: 24px; top: 7px; position: absolute; text-align: center; color: rgba(0, 0, 0, 0.56); font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word"
-                        min="1900" max="2099" step="1" value="2016"/>
+                        min="1900" max="2099" step="1" value="2016" />
                 </div>
                 <div
                     style="left: 150px; top: 9px; position: absolute; text-align: center; color: black; font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word">
@@ -150,7 +192,7 @@
             </div>
         </div>
 
-        
+
 
         <div style="width: 132px; height: 36px; position: relative; margin: 0 auto;">
             <div
@@ -160,89 +202,37 @@
                 style="width: 132px; height: 33.60px; left: -0px; top: 0.55px; position: absolute; background: #F9BE2E; border-radius: 22px">
             </div>
             <input type="submit" value="rechercher"
-                style="width: 132px; height: 34.15px; left: 0px;;position: absolute; text-align: center; color: #705719; font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word; border: none; background: none;">
+                style="width: 132px; height: 34.15px; left: 0px;position: absolute; text-align: center; color: #705719; font-size: 15px; font-family: Inter; font-weight: 700; text-transform: lowercase; word-wrap: break-word; border: none; background: none;">
         </div>
     </form>
 
     <div class="section_title">Résultat(s) (3)</div>
-
-    <div style="margin: 15px auto; display: block; height: max-content; width: max-content;">
-        <div style="
-        width: 307px;
-        height: 141px;
-        position: relative;
-        margin: 0 auto;
-        padding: 7px;
-        ">
-            <div
-                style="width: 100%;height: 100%;left: 0px;top: 0px;position: absolute;background: #FFC639;border-radius: 15px">
-            </div>
-            <div
-                style="width: 134.44px; height: 29.68px; left: 11.64px; top: 4.95px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Nom histoire</div>
-            <div
-                style="width: 50.81px; height: 21.03px; left: 11.64px; top: 40.82px; position: absolute; color: #3F2E20; font-size: 14px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Auteur</div>
-            <div
-                style="width: 284px; height: 58px; left: 12px; top: 67px; position: absolute; color: #484848; font-size: 10px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio
-                sollemnium sportularum, anxia deliberatione tractatur an exceptis his... </div>
-            <div
-                style="width: 121px; height: 5px; left: 12px; top: 35px; position: absolute; background: linear-gradient(90deg, #D0A435 0%, #D0A435 49%, rgba(184.39, 138.54, 90.71, 0) 100%); border-radius: 15px">
+    <div id="hist-wrapper">
+        <div class="hist-wrapper">
+            <div class="hist-content">
+                <div>Nom histoire</div>
+                <div class="hist-line-effet"> </div>
+                <div>Auteur</div>
+                <div class="hist-desc">Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio
+                    sollemnium sportularum, anxia deliberatione tractatur an exceptis his... </div>
             </div>
         </div>
-    </div>
-
-    <div style="margin: 15px auto; display: block; height: max-content; width: max-content;">
-        <div style="
-        width: 307px;
-        height: 141px;
-        position: relative;
-        margin: 0 auto;
-        padding: 7px;
-        ">
-            <div
-                style="width: 100%;height: 100%;left: 0px;top: 0px;position: absolute;background: #FFC639;border-radius: 15px">
-            </div>
-            <div
-                style="width: 134.44px; height: 29.68px; left: 11.64px; top: 4.95px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Nom histoire</div>
-            <div
-                style="width: 50.81px; height: 21.03px; left: 11.64px; top: 40.82px; position: absolute; color: #3F2E20; font-size: 14px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Auteur</div>
-            <div
-                style="width: 284px; height: 58px; left: 12px; top: 67px; position: absolute; color: #484848; font-size: 10px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio
-                sollemnium sportularum, anxia deliberatione tractatur an exceptis his... </div>
-            <div
-                style="width: 121px; height: 5px; left: 12px; top: 35px; position: absolute; background: linear-gradient(90deg, #D0A435 0%, #D0A435 49%, rgba(184.39, 138.54, 90.71, 0) 100%); border-radius: 15px">
+        <div class="hist-wrapper">
+            <div class="hist-content">
+                <div>Nom histoire</div>
+                <div class="hist-line-effet"> </div>
+                <div>Auteur</div>
+                <div class="hist-desc">Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio
+                    sollemnium sportularum, anxia deliberatione tractatur an exceptis his... </div>
             </div>
         </div>
-    </div>
-
-    <div style="margin: 15px auto; display: block; height: max-content; width: max-content;">
-        <div style="
-        width: 307px;
-        height: 141px;
-        position: relative;
-        margin: 0 auto;
-        padding: 7px;
-        ">
-            <div
-                style="width: 100%;height: 100%;left: 0px;top: 0px;position: absolute;background: #FFC639;border-radius: 15px">
-            </div>
-            <div
-                style="width: 134.44px; height: 29.68px; left: 11.64px; top: 4.95px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Nom histoire</div>
-            <div
-                style="width: 50.81px; height: 21.03px; left: 11.64px; top: 40.82px; position: absolute; color: #3F2E20; font-size: 14px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Auteur</div>
-            <div
-                style="width: 284px; height: 58px; left: 12px; top: 67px; position: absolute; color: #484848; font-size: 10px; font-family: Inter; font-weight: 700; text-transform: capitalize; word-wrap: break-word">
-                Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio
-                sollemnium sportularum, anxia deliberatione tractatur an exceptis his... </div>
-            <div
-                style="width: 121px; height: 5px; left: 12px; top: 35px; position: absolute; background: linear-gradient(90deg, #D0A435 0%, #D0A435 49%, rgba(184.39, 138.54, 90.71, 0) 100%); border-radius: 15px">
+        <div class="hist-wrapper">
+            <div class="hist-content">
+                <div>Nom histoire</div>
+                <div class="hist-line-effet"> </div>
+                <div>Auteur</div>
+                <div class="hist-desc">Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio
+                    sollemnium sportularum, anxia deliberatione tractatur an exceptis his... </div>
             </div>
         </div>
     </div>
